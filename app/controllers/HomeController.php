@@ -1,16 +1,12 @@
 <?php
 namespace App\Controllers;
 
-use App\Models\Student;
+class HomeController
+{
 
-class HomeController {
-
-    public function index() {
-        // Dữ liệu
-        $message = "Chào mừng đến với MVC!";
-        $studentInfo = (new Student())->getInfo();
-
-        // Gọi View
+    public function index()
+    {
+        // Gọi View trang chủ
         include 'views/home.php';
     }
 }
